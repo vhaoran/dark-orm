@@ -6,3 +6,33 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+tokio = {version = "1" ,features=["full" ,"test-util"]}
+
+serde = "~1.0.136"
+serde_json = "~1.0.79"
+serde_derive = "~1.0.136"
+#serde_yaml = "^0.8"
+
+#lazy_static = "^1.4.0"
+
+log = "^0.4"
+env_logger = "^0.8"
+simple-log = "^1"
+#uuid = { version = "0.6", features = ["serde", "v4"] }
+#num-format = "0.4.0"
+
+#url = "^2"
+# datetime
+chrono = "^0.4.19"
+once_cell = "^1.7.2"
+
+#deadpool = {version = "0.7" , features = ["managed"]}
+async-trait = "0.1.50"
+
+futures = "^0.3"
+fast_log="1.3"
+sqlx = { version = "^0.6.0", features = [ "runtime-tokio-rustls","mysql" ] }
+
+anyhow = "^1.0.65"
+bson = "^2.4.0"
+
